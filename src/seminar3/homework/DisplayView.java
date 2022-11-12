@@ -58,7 +58,7 @@ public class DisplayView<V extends View> {
     }
 
     private void writePersonData(DataCheck data) throws IOException {
-        File filepath = new File(data.getLastName());
+        File filepath = new File("C:\\Users\\Admin\\Java_projects\\JavaExceptions\\src\\seminar3\\homework\\" + data.getLastName());
         try (FileWriter fw = new FileWriter(filepath, true)) {
             fw.append(data.toString() + "\n");
         } catch (IOException e) {
